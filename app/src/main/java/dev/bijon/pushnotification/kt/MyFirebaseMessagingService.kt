@@ -53,6 +53,12 @@ class MyFirebaseMessagingService: FirebaseMessagingService() {
 //        sendTokenToServer(s)
 //    }
 
+//    override fun onNewToken(s: String?) {
+//        super.onNewToken(s!!)
+//        Log.e("newToken", s)
+//        getSharedPreferences("_", MODE_PRIVATE).edit().putString("fb", s).apply()
+//    }
+
     private fun sendTokenToServer(newToken: String) {
         Log.i(TAG, "sendTokenToServer: $newToken")
     }
